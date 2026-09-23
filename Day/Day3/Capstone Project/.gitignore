@@ -1,0 +1,71 @@
+# ==============================================================================
+# Python & FastAPI Specific
+# ==============================================================================
+
+# Byte-compiled files (speeds up execution, not needed in Git)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments (never commit your local dependencies)
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets (CRITICAL: Never commit credentials)
+.env
+.env.*
+!.env.example
+secrets.toml
+
+# FastAPI / Uvicorn / Application Logs
+logs/
+*.log
+*.log.*
+
+# Local Databases (if using SQLite for local testing)
+*.db
+*.sqlite
+*.sqlite3
+
+# ==============================================================================
+# Testing & Code Quality
+# ==============================================================================
+
+# Pytest and Coverage tools
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+
+# Type Checkers & Linters
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ==============================================================================
+# IDEs & Editor Configuration
+# ==============================================================================
+
+# VS Code settings
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+
+# OS-specific temporary files
+.DS_Store
+Thumbs.db
