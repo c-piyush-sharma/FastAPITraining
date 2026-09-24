@@ -1,14 +1,33 @@
-# ==============================================================================
-# Python & FastAPI Specific
-# ==============================================================================
-
-# Byte-compiled files (speeds up execution, not needed in Git)
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 
-# Virtual Environments (never commit your local dependencies)
+# C extensions
+*.so
+
+# Distribution / packaging
+bin/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
 .venv/
 venv/
 ENV/
@@ -16,35 +35,35 @@ env/
 env.bak/
 venv.bak/
 
-# Environment Variables & Secrets (CRITICAL: Never commit credentials)
+# Environment variables and secrets (NEVER commit these)
 .env
 .env.*
 !.env.example
 secrets.toml
 
-# FastAPI / Uvicorn / Application Logs
-logs/
-*.log
-*.log.*
-
-# Local Databases (if using SQLite for local testing)
+# FastAPI / SQL Databases (if using local SQLite for development)
 *.db
 *.sqlite
 *.sqlite3
 
-# ==============================================================================
-# Testing & Code Quality
-# ==============================================================================
+# Logging
+logs/
+*.log
+*.out
 
-# Pytest and Coverage tools
+# Unit testing / Coverage reports
 .pytest_cache/
-.coverage
-.coverage.*
-htmlcov/
 .tox/
 .nox/
+.coverage
+.coverage.*
+.cache
+htmlcov/
+coverage.xml
+*.cover
+.hypothesis/
 
-# Type Checkers & Linters
+# Type checkers and linters
 .mypy_cache/
 .dmypy.json
 dmypy.json
@@ -52,20 +71,15 @@ dmypy.json
 .pytype/
 .ruff_cache/
 
-# ==============================================================================
-# IDEs & Editor Configuration
-# ==============================================================================
-
-# VS Code settings
-.vscode/
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-*.code-workspace
-
-# JetBrains / PyCharm
-.idea/
-
-# OS-specific temporary files
+# OS-specific files
 .DS_Store
+.DS_Store?
+ehthumbs.db
+Icon?
 Thumbs.db
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
